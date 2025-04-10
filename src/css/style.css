@@ -92,8 +92,11 @@ body {
     .menu-toggle {
         display: flex;
         position: fixed;
-        top: 20px;
+        top: 50px;
         right: 20px;
+    }
+    .logo {
+        width: 40%;
     }
 
     .btn-contatar {
