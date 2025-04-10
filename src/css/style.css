@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Quando a seção estiver visível */
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+body {
+    background-color: #000533;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    border-bottom: 1px solid #333a50;
+    position: sticky;
+    top: 0;
+    background-color: #041444;
+    z-index: 1000;
+}
+
+.logo {
+    width: 150px;
+}
+
+/* Ajeitando o nav-links */
+.nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn-contatar {
+    background-color: #2962ff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-contatar:hover {
+    background-color: #1e40ff;
+}
+
+/* Esconde o menu-toggle no desktop */
+.menu-toggle {
+    display: none;
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+
+    .btn-contatar {
+        display: none; /* Some o botão contatar no mobile */
+    }
+
+    nav.nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background-color: #041444;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: right 0.3s ease;
+        z-index: 1000;
+    }
+
+    nav.nav-links.open {
+        right: 0;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+
+/* Hero Section */
+.hero {
+    padding: 60px 20px 210px 20px;
+}
+
+.btn-ideias {
+    background-color: #1d2438;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 30px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 51px;
+    font-weight: 700;
+    color: #2962ff;
+    margin-bottom: 20px;
+}
+
+h2 span {
+    color: #ffffff;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #a0aec0;
+    margin-bottom: 40px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.btn-conhecer,
+.btn-video {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-conhecer {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn-conhecer:hover {
+    background-color: white;
+    color: #0c1120;
+}
+
+.btn-video {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn-video:hover {
+    background-color: #ffffff;
+    color: #0c1120;
+}
+
+/* Hashtags */
+.hashtags {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    color: #a0aec0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+

@@ -1,0 +1,179 @@
+/* Área principal de contato */
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza no desktop também */
+  padding: 50px 100px;
+  margin: 50px;
+  gap: 30px;
+}
+
+/* Área de informações */
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  flex: 1;
+  min-width: 320px;
+  max-width: 600px;
+}
+
+/* Caixa de informação */
+.info-box {
+  background: #fff;
+  padding: 25px;
+  text-align: center;
+  border-radius: 0px;
+  box-shadow: 0 4px 20px rgb(111, 0, 255);
+}
+
+/* Ícones */
+.info-box i {
+  font-size: 30px;
+  color: #2962ff;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+/* Títulos e textos */
+.info-box h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.info-box p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+.info-box a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+/* Área do formulário */
+.contact-form {
+  background: #2962ff;
+  padding: 40px;
+  flex: 1;
+  border-radius: 0px;
+  box-shadow: 0 4px 20px rgb(111, 0, 255);
+  min-width: 320px;
+  max-width: 600px;
+}
+
+/* Título do formulário */
+.contact-form h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Formulário */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 0px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Botão */
+.form-button {
+  text-align: center;
+}
+
+.contact-form button {
+  background: #1e1f26;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    gap: 20px;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    gap: 20px;
+  }
+
+  .info-box {
+    width: 100%;
+    max-width: 320px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .contact-form h2 {
+    font-size: 24px;
+  }
+
+  .contact-form form {
+    width: 100%;
+    align-items: center;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    max-width: 200px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+}

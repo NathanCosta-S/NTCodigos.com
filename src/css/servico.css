@@ -1,0 +1,78 @@
+.servicos {
+    padding: 80px 20px;
+  }
+  
+  .servicos .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .texto-servicos {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  
+  .texto-servicos h3 {
+    color: #3b82f6;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .texto-servicos h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .texto-servicos p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 700px;
+  }
+  
+  .cards-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    
+  }
+  
+  .card {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 20px rgb(111, 0, 255);
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card .icone {
+    width: 50px;
+    height: 50px;
+    background-color: #3b82f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .card .icone img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .card h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  

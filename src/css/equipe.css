@@ -1,0 +1,132 @@
+.team-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.team-section .description {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: #727272;
+  font-size: 18px;
+}
+
+.team-section .team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.team-section .card {
+  background-color: #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: left;
+  padding: 20px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.team-section .card:hover {
+  transform: translateY(-5px);
+}
+
+.team-section .avatar {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.team-section .info h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.team-section .role {
+  color: #94a3b8;
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.team-section .info p {
+  margin: 10px 0;
+  font-size: 15px;
+  color: #e2e8f0;
+}
+
+.team-section .social {
+  margin-top: 10px;
+}
+
+.team-section .social i {
+  margin-right: 10px;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.team-section .social i:hover {
+  color: #fff;
+}
+/* Estilos gerais continuam iguais */
+
+/* 🔥 Melhor responsividade - agora tablet também */
+@media (max-width: 1024px) {
+  .team-section .card {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .team-section .avatar {
+      width: 180px;
+  }
+
+  .team-section .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .team-section .info h3 {
+      font-size: 20px;
+  }
+
+  .team-section .info p {
+      font-size: 16px;
+  }
+
+  .team-section .role {
+      font-size: 14px;
+  }
+}
+
+/* Mobile ainda menor (até 768px) */
+@media (max-width: 768px) {
+  .team-section .avatar {
+      width: 150px;
+  }
+
+  .team-section .info h3 {
+      font-size: 18px;
+  }
+
+  .team-section .info p {
+      font-size: 14px;
+  }
+
+  .team-section .role {
+      font-size: 13px;
+  }
+}
+

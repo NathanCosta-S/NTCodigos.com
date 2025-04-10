@@ -1,0 +1,49 @@
+.sobre-mim {
+    padding: 80px 20px;
+  }
+  
+  .sobre-mim .container {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .sobre-mim .texto {
+    flex: 1 1 500px;
+  }
+  
+  .sobre-mim .texto h3 {
+    color: #3b82f6; /* Azul para o subtítulo */
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .sobre-mim .texto h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .sobre-mim .texto p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .sobre-mim .imagens {
+    flex: 1 1 400px;
+    display: flex;
+    gap: 20px; /* Espaço entre as imagens */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sobre-mim .imagens img {
+    max-width: 400px;
+    width: 100%;
+   
+  }

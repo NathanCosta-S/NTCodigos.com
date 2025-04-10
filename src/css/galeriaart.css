@@ -1,0 +1,94 @@
+.trabalhos {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .trabalhos h1 {
+    color: #6e6e6e;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  
+  .linha {
+    width: 40px;
+    height: 4px;
+    background-color: #3b82f6;
+    margin: 10px auto 20px auto;
+    border-radius: 5px;
+  }
+  
+  .trabalhos h4 {
+    font-size: 28px;
+    color: #3b82f6;
+    font-weight: normal;
+    margin-bottom: 50px;
+  }
+  
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto 30px auto;
+  }
+  
+  .item img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    box-shadow: 0 4px 20px rgb(111, 0, 255);
+  }
+  
+  .creditos {
+    font-size: 14px;
+    color: #777;
+    margin-top: 20px;
+  }
+  
+  .creditos a {
+    color: #777;
+    text-decoration: underline;
+  }
+  
+  .botao-contato {
+    margin-top: 20px;
+  }
+  
+  .botao-contato a {
+    display: inline-block;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 20px rgb(111, 0, 255);
+  }
+  
+  .botao-contato a:hover {
+    background-color: #3b82f6;
+    transform: translateY(-5px);
+  }
+  
+  .item img:hover {
+    transform: scale(1.05); /* <<< Leve zoom ao passar o mouse */
+  }
+
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .galeria {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .galeria {
+      grid-template-columns: 1fr;
+    }
+  }
