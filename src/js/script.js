@@ -15,17 +15,13 @@ function showNextSlide() {
   const slidesContainer = document.getElementById('slides');
   slidesContainer.style.transform = `translateX(-${slideWidth * slideIndex}px)`;
 }
-
-// Trocar a cada 3 segundos (3000ms)
 setInterval(showNextSlide, 3000);
-
-
 
 document.addEventListener("DOMContentLoaded", function() {
     const sections = document.querySelectorAll("section");
 
     function checkSections() {
-        const triggerBottom = window.innerHeight * 1; // Pode ajustar 0.85 para mais cedo ou mais tarde aparecer
+        const triggerBottom = window.innerHeight * 1; 
 
         sections.forEach(section => {
             const sectionTop = section.getBoundingClientRect().top;
@@ -39,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     window.addEventListener("scroll", checkSections);
-    checkSections(); // Executa logo que carregar
+    checkSections(); 
 });
 
 const menuToggle = document.querySelector('.menu-toggle');
