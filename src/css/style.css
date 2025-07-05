@@ -19,8 +19,8 @@ section.visible {
 
 
 body {
-    background-color: #000533;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
@@ -31,18 +31,16 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px 60px;
-    border-bottom: 1px solid #333a50;
-    position: sticky;
+   
     top: 0;
-    background-color: #041444;
+    background-color: #ffffff;
     z-index: 1000;
 }
 
 .logo {
-    width: 250px;
+    width: 200px;
 }
 
-/* Ajeitando o nav-links */
 .nav-links {
     flex: 1;
     display: flex;
@@ -57,14 +55,20 @@ body {
 }
 
 .nav-links li a {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
 }
+.nav-links li a:hover{
+    background-color: #815AA4;
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+}
 
 .btn-contatar {
-    background-color: #2962ff;
+    background-color: #815AA4;
     border: none;
     padding: 10px 20px;
     border-radius: 8px;
@@ -72,10 +76,12 @@ body {
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .btn-contatar:hover {
-    background-color: #1e40ff;
+     background-color: white;
+     color: #815AA4;
 }
 
 /* Esconde o menu-toggle no desktop */
@@ -94,6 +100,10 @@ body {
         position: fixed;
         top: 55px;
         right: 20px;
+        color: #ffffff;
+        background-color: #000000;
+        border-radius: 50%;
+        padding: 7px;
     }
     .logo {
         width: 100%;
@@ -109,7 +119,7 @@ body {
         right: -100%;
         width: 80%;
         height: 100vh;
-        background-color: #041444;
+        background-color: #815AA4;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -132,10 +142,11 @@ body {
 /* Hero Section */
 .hero {
     padding: 60px 20px 210px 20px;
+    background-image: linear-gradient(to bottom, #ffffff, #815AA4);
 }
 
 .btn-ideias {
-    background-color: #1d2438;
+    background-color: #815AA4;
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 20px;
@@ -154,7 +165,7 @@ h1 {
 h2 {
     font-size: 51px;
     font-weight: 700;
-    color: #2962ff;
+    color: #815AA4;
     margin-bottom: 20px;
 }
 
@@ -164,7 +175,7 @@ h2 span {
 
 .hero p {
     font-size: 18px;
-    color: #a0aec0;
+    color: #ffffff;
     margin-bottom: 40px;
 }
 
@@ -212,7 +223,7 @@ h2 span {
     justify-content: center;
     gap: 40px;
     margin-top: 20px;
-    color: #a0aec0;
+    color: #000000;
     font-weight: bold;
     font-size: 18px;
 }

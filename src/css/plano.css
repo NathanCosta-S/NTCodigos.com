@@ -12,7 +12,7 @@
   .plans-section p {
     max-width: 800px;
     margin: 0 auto 20px;
-    color: #727272;
+    color: #000000;
     font-size: 18px;
   }
   
@@ -25,7 +25,7 @@
   }
   
   .plans-section .plan-card {
-    background-color: #1e293b;
+    background-color: #6d12bd;
     border-radius: 12px;
     padding: 30px 20px;
     box-shadow: 0 0 0 2px transparent;
@@ -39,11 +39,12 @@
   .plans-section .plan-card h3 {
     font-size: 24px;
     margin-bottom: 10px;
+    color: white;
   }
   
   .plans-section .plan-card p {
     font-size: 16px;
-    color: #cbd5e1;
+    color: #ffffff;
     margin-bottom: 20px;
   }
   
@@ -72,7 +73,7 @@
   
   /* Destaque no plano médio */
   .plans-section .plan-card.featured {
-    background-color: #334155;
+    background-color: #390269;
   }
   .plans-section .plan-details {
     list-style: none;

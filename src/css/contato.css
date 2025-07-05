@@ -30,7 +30,7 @@
 /* Ícones */
 .info-box i {
   font-size: 30px;
-  color: #2962ff;
+  color: #6d12bd;
   margin-bottom: 10px;
   display: inline-block;
 }
@@ -56,7 +56,7 @@
 
 /* Área do formulário */
 .contact-form {
-  background: #2962ff;
+  background: #6d12bd;
   padding: 40px;
   flex: 1;
   border-radius: 0px;

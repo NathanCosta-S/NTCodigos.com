@@ -14,14 +14,14 @@
   .linha {
     width: 40px;
     height: 4px;
-    background-color: #3b82f6;
+    background-color: #6d12bd;
     margin: 10px auto 20px auto;
     border-radius: 5px;
   }
   
   .trabalhos h4 {
     font-size: 28px;
-    color: #3b82f6;
+    color: #000000;
     font-weight: normal;
     margin-bottom: 50px;
   }
@@ -39,7 +39,7 @@
     display: block;
     object-fit: cover;
     transition: transform 0.4s ease;
-    box-shadow: 0 4px 20px rgb(111, 0, 255);
+    
   }
   
   .creditos {
@@ -58,8 +58,9 @@
   }
   
   .botao-contato a {
+    background-color: #6d12bd;
     display: inline-block;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 12px 30px;
     border-radius: 3px;
     text-decoration: none;
@@ -72,7 +73,8 @@
   }
   
   .botao-contato a:hover {
-    background-color: #3b82f6;
+    background-color: #6d12bd;
+    color: white;
     transform: translateY(-5px);
   }
   
