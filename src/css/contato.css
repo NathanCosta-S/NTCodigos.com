@@ -2,20 +2,20 @@
 .contact-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centraliza no desktop também */
-  padding: 50px 100px;
-  margin: 50px;
+  justify-content: center; /* Centraliza no desktop e mobile */
+  padding: 50px 100px; /* Padding para desktop */
+  margin: 50px auto; /* Centraliza a seção no desktop */
   gap: 30px;
 }
 
 /* Área de informações */
 .contact-info {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* Duas colunas no desktop */
   gap: 20px;
   flex: 1;
-  min-width: 320px;
-  max-width: 600px;
+  min-width: 320px; /* Largura mínima para desktop */
+  max-width: 600px; /* Largura máxima para desktop */
 }
 
 /* Caixa de informação */
@@ -23,8 +23,8 @@
   background: #fff;
   padding: 25px;
   text-align: center;
-  border-radius: 0px;
-  box-shadow: 0 4px 20px rgb(111, 0, 255);
+  border-radius: 8px; /* Adicionei um border-radius para um visual mais suave */
+  box-shadow: 0 4px 20px rgba(111, 0, 255, 0.2); /* Sombra mais sutil */
 }
 
 /* Ícones */
@@ -37,15 +37,15 @@
 
 /* Títulos e textos */
 .info-box h3 {
-  font-size: 16px;
+  font-size: 18px; /* Aumentei um pouco para melhor legibilidade */
   font-weight: bold;
-  color: #000;
+  color: #333; /* Cor um pouco mais suave para o texto */
   margin-bottom: 8px;
 }
 
 .info-box p {
-  font-size: 14px;
-  color: #333;
+  font-size: 15px; /* Aumentei um pouco para melhor legibilidade */
+  color: #555;
   margin: 0;
 }
 
@@ -59,10 +59,11 @@
   background: #6d12bd;
   padding: 40px;
   flex: 1;
-  border-radius: 0px;
-  box-shadow: 0 4px 20px rgb(111, 0, 255);
-  min-width: 320px;
-  max-width: 600px;
+  border-radius: 8px; /* Adicionei um border-radius */
+  box-shadow: 0 4px 20px rgba(111, 0, 255, 0.2); /* Sombra mais sutil */
+  min-width: 320px; /* Largura mínima para desktop */
+  max-width: 600px; /* Largura máxima para desktop */
+  color: #fff; /* Garante que o texto dentro do formulário seja branco */
 }
 
 /* Título do formulário */
@@ -85,10 +86,11 @@
 .contact-form textarea {
   padding: 12px;
   font-size: 16px;
-  border: none;
-  border-radius: 0px;
+  border: 1px solid #ccc; /* Adicionei uma borda sutil */
+  border-radius: 5px; /* Arredondei um pouco as bordas dos inputs */
   background: #ffffff;
   box-sizing: border-box;
+  width: 100%; /* Garante que ocupe 100% da largura do pai */
 }
 
 .contact-form textarea {
@@ -99,81 +101,103 @@
 /* Botão */
 .form-button {
   text-align: center;
+  margin-top: 15px; /* Adicionei um espaço acima do botão */
 }
 
 .contact-form button {
   background: #1e1f26;
   color: #fff;
-  padding: 10px 30px;
-  font-size: 14px;
+  padding: 12px 30px; /* Aumentei um pouco o padding do botão */
+  font-size: 16px; /* Aumentei o font-size do botão */
   font-weight: bold;
   border: none;
-  border-radius: 0px;
+  border-radius: 5px; /* Arredondei as bordas do botão */
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.3s ease; /* Transição mais suave */
 }
 
 .contact-form button:hover {
   background: #333;
 }
 
-/* Responsividade */
+/* --- Responsividade para Mobile --- */
 @media (max-width: 768px) {
   .contact-section {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    margin: 20px;
-    gap: 20px;
+    flex-direction: column; /* Empilha os itens verticalmente */
+    align-items: center; /* Centraliza os itens empilhados */
+    padding: 30px 20px; /* Ajuste do padding para mobile */
+    margin: 30px 0; /* Ajuste da margem para mobile */
+    gap: 30px; /* Espaçamento entre as seções */
   }
 
   .contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 400px;
-    gap: 20px;
+    grid-template-columns: 1fr; /* Uma coluna no mobile */
+    width: 100%; /* Ocupa a largura total disponível */
+    max-width: 450px; /* Mantém uma largura máxima controlada */
+    flex: none; /* Remove a flexibilidade */
   }
 
   .info-box {
-    width: 100%;
-    max-width: 320px;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
+    width: 100%; /* Ocupa a largura total da .contact-info */
+    padding: 25px; /* Mantém o padding para um bom espaçamento */
   }
 
   .contact-form {
-    width: 100%;
-    max-width: 400px;
-    padding: 30px 20px;
-    border-radius: 5px;
-    text-align: center;
+    width: 100%; /* Ocupa a largura total disponível */
+    max-width: 450px; /* Mantém uma largura máxima controlada */
+    padding: 30px 25px; /* Ajuste do padding para o formulário */
+    flex: none; /* Remove a flexibilidade */
   }
 
   .contact-form h2 {
-    font-size: 24px;
-  }
-
-  .contact-form form {
-    width: 100%;
-    align-items: center;
+    font-size: 28px; /* Título do formulário um pouco menor */
+    margin-bottom: 25px;
   }
 
   .contact-form input,
   .contact-form textarea {
-    width: 100%;
-    font-size: 14px;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
+    font-size: 15px; /* Fonte menor para inputs */
+    padding: 12px; /* Padding ajustado */
   }
 
   .contact-form button {
-    width: 100%;
-    max-width: 200px;
-    margin-top: 10px;
-    border-radius: 5px;
+    width: 80%; /* Botão com largura um pouco menor que 100% */
+    max-width: 250px; /* Largura máxima para o botão */
+    font-size: 15px;
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustes para telas muito pequenas */
+  .contact-section {
+    padding: 20px 15px;
+    margin: 20px 0;
+    gap: 25px;
+  }
+
+  .info-box h3 {
+    font-size: 17px;
+  }
+
+  .info-box p {
+    font-size: 14px;
+  }
+
+  .contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+  }
+
+  .contact-form button {
+    width: 90%;
+    max-width: 220px;
+    font-size: 14px;
+    padding: 10px 20px;
   }
 }

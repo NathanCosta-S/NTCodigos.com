@@ -1,7 +1,7 @@
 
 
 #slides-container {
-    width: 100% auto;
+    width: 50% auto;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -20,7 +20,7 @@
   }
   
   .slide img {
-    width: 50%;
+    width: 40%;
     height: auto;
   }
   
@@ -34,3 +34,28 @@
     padding: 10px;
     text-align: center;
   }
+
+  @media (max-width: 768px) {
+  #slides-container {
+    width: 95%; /* On mobile, the container takes up more width */
+    margin: 0 auto; /* Center it with a small margin */
+  }
+
+  .slide img {
+    width: 90%; /* On mobile, images take up more of the slide width */
+    max-width: 400px; /* Optional: Set a max-width for very large screens */
+  }
+
+  .caption {
+    font-size: 0.9em; /* Slightly smaller font size for captions on mobile */
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Even smaller screens, like older phones */
+  .caption {
+    font-size: 0.8em; /* Even smaller font size */
+    padding: 5px;
+  }
+}
