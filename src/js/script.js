@@ -179,3 +179,28 @@ document.addEventListener('DOMContentLoaded', function () {
 //         });
 //     }
 // });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+    // Função para rolar a página para o topo
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Rola suavemente
+        });
+    }
+
+    // Adiciona um ouvinte de evento para o clique no botão
+    scrollToTopBtn.addEventListener('click', scrollToTop);
+
+    // Mostra/esconde o botão com base na posição de rolagem
+    window.addEventListener('scroll', function() {
+        // Se a rolagem vertical for maior que 200px, mostra o botão
+        if (window.scrollY > 200) {
+            scrollToTopBtn.classList.add('show');
+        } else {
+            scrollToTopBtn.classList.remove('show');
+        }
+    });
+});

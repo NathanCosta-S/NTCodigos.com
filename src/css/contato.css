@@ -361,3 +361,9 @@
         padding: 10px 20px;
     }
 }
+
+.Info-contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
